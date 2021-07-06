@@ -35,6 +35,20 @@
             <h1>Progress Update 7 (July 4, 2021)</h1>
             <br>
             <p>
+            Changed enemy death animation to stumble backwards, then switch to ragdoll physics mid-animation.<br>
+            Headshot skips death animation and immediately puts enemy in ragdoll physics.<br>
+            Enemy drops rifle as a pickup object which adds ammo to player.
+            </p>
+            <video width="640" height="480" controls>
+            <source src="spacedev008.mp4" type="video/mp4">
+            </video>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h1>Progress Update 7 (July 4, 2021)</h1>
+            <br>
+            <p>
               Strange bugged behavior while attempting to implement enemy ragdoll physics.<br>
               The problem was that the ragdoll physics, animation system and AI system were all fighting over control.<br>
               The solution was just to make sure ragdoll physics are inactive while enemy is alive by setting all the rigidbodies to kinematic in script.
